@@ -1,5 +1,5 @@
 import pymysql
-from auto.util.config import *
+from util.config import *
 
 
 class MySqlUtil:

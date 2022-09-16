@@ -1,8 +1,8 @@
-from auto.util.LogUtil import *
-from auto.util.MySqlUtil import *
-from auto.util.RedisUtil import *
-from auto.util.ExcelUtil import *
-from auto.util.googleUtil import *
+from util.LogUtil import *
+from util.MySqlUtil import *
+from util.RedisUtil import *
+from util.ExcelUtil import *
+from util.googleUtil import *
 import pytest
 import random
 import time
@@ -25,7 +25,7 @@ class test_ehashpool:
     def setup_class(self):
         print('初始化数据')
         '''清除用户数据'''
-        mysqlUtil.initEhashAccount()
+        # mysqlUtil.initEhashAccount()
 
     def teardown_class(self):
         print("测试结束")
@@ -902,461 +902,461 @@ class test_ehashpool:
 
 
 
-    '''注册模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("singUp")
-    def test_singUp(self):
+    # '''注册模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("singUp")
+    # def test_singUp(self):
+    #
+    #     with allure.step('step1:sendEmailCode'):
+    #         self.sendEmailCode(EMALIL_CODE_SINGUP) #发送注册验证码
+    #
+    #     with allure.step('step2:checkUserSignIn'):
+    #         self.checkUserSignIn() #检查验证码
+    #
+    #     with allure.step('step3:addETHUser'):
+    #         self.addETHUser() #注册用户
+
+    #
+    # '''算力模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("hashRate")
+    # def test_hashRate(self):
+    #     RP_Token = ''
+    #
+    #     with allure.step('step1:login'):
+    #         RP_Token = self.login() #登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token':RP_Token
+    #     }
+    #     uid = mysqlUtil.getUidWithEmail()
+    #
+    #     with allure.step('step2:createMiner'):
+    #         self.createMiner(newHeaders,uid) #创建子账户
+    #
+    #
+    #
+    #     minerName = ''
+    #     minerId = ''
+    #     with allure.step('step3:getMinerList'):
+    #         minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
+    #
+    #
+    #     '''有疑问'''
+    #     # with allure.step('step4:checkMinerName'):
+    #     #     self.checkMinerName(minerName) #检查子账户名称
+    #
+    #
+    #     with allure.step('step5:getStatSummary'):
+    #         newHeaders['Miner-Id'] = str(minerId)
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getStatSummary(newHeaders,minerId)#获取子账号汇总数据
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getStatSummary(newHeaders,minerId)
+    #
+    #     with allure.step('step6:getHashRate'):
+    #         newHeaders['Miner-Id'] = str(minerId)
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getHashRate(newHeaders,minerId,'10m')#获取子账号算力图表
+    #         self.getHashRate(newHeaders, minerId, '1h')
+    #         self.getHashRate(newHeaders, minerId, '1d')
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getHashRate(newHeaders, minerId, '10m')
+    #         self.getHashRate(newHeaders, minerId, '1h')
+    #         self.getHashRate(newHeaders, minerId, '1d')
+    #
+    #
+    #     with allure.step('step7:exportHashrate'):
+    #         newHeaders['Miner-Id'] = str(minerId)
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #
+    #         self.exportHashrate(newHeaders,minerId,'1h')# #导出子账号算力图表
+    #         count = getRowsCount('./download/hashRate1hETC.xlsx','ETC1')
+    #         assert count==1+24 #表头+数据
+    #
+    #         self.exportHashrate(newHeaders, minerId, '10m')
+    #         count = getRowsCount('./download/hashRate10mETC.xlsx', 'ETC1')
+    #         assert count == 1 + 144  # 表头+数据
+    #
+    #         self.exportHashrate(newHeaders, minerId, '1d')
+    #         count = getRowsCount('./download/hashRate1dETC.xlsx', 'ETC1')
+    #         assert count == 1 + 1  # 表头+数据
+    #
+    #
+    #
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #
+    #         self.exportHashrate(newHeaders, minerId, '1h')
+    #         count = getRowsCount('./download/hashRate1hETH.xlsx', 'ETH1')
+    #         assert count == 1 + 24  # 表头+数据
+    #
+    #         self.exportHashrate(newHeaders, minerId, '10m')
+    #         count = getRowsCount('./download/hashRate10mETH.xlsx', 'ETH1')
+    #         assert count == 1 + 144  # 表头+数据
+    #
+    #         self.exportHashrate(newHeaders, minerId, '1d')
+    #         count = getRowsCount('./download/hashRate1dETH.xlsx', 'ETH1')
+    #         assert count == 1 + 1  # 表头+数据
+
+
+
 
-        with allure.step('step1:sendEmailCode'):
-            self.sendEmailCode(EMALIL_CODE_SINGUP) #发送注册验证码
 
-        with allure.step('step2:checkUserSignIn'):
-            self.checkUserSignIn() #检查验证码
 
-        with allure.step('step3:addETHUser'):
-            self.addETHUser() #注册用户
-
-
-    '''算力模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("hashRate")
-    def test_hashRate(self):
-        RP_Token = ''
-
-        with allure.step('step1:login'):
-            RP_Token = self.login() #登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token':RP_Token
-        }
-        uid = mysqlUtil.getUidWithEmail()
-
-        with allure.step('step2:createMiner'):
-            self.createMiner(newHeaders,uid) #创建子账户
-
-
-
-        minerName = ''
-        minerId = ''
-        with allure.step('step3:getMinerList'):
-            minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
-
-
-        '''有疑问'''
-        # with allure.step('step4:checkMinerName'):
-        #     self.checkMinerName(minerName) #检查子账户名称
-
-
-        with allure.step('step5:getStatSummary'):
-            newHeaders['Miner-Id'] = str(minerId)
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getStatSummary(newHeaders,minerId)#获取子账号汇总数据
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getStatSummary(newHeaders,minerId)
-
-        with allure.step('step6:getHashRate'):
-            newHeaders['Miner-Id'] = str(minerId)
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getHashRate(newHeaders,minerId,'10m')#获取子账号算力图表
-            self.getHashRate(newHeaders, minerId, '1h')
-            self.getHashRate(newHeaders, minerId, '1d')
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getHashRate(newHeaders, minerId, '10m')
-            self.getHashRate(newHeaders, minerId, '1h')
-            self.getHashRate(newHeaders, minerId, '1d')
-
-
-        with allure.step('step7:exportHashrate'):
-            newHeaders['Miner-Id'] = str(minerId)
-            newHeaders['Coin-Type'] = 'ETC'
-
-            self.exportHashrate(newHeaders,minerId,'1h')# #导出子账号算力图表
-            count = getRowsCount('./download/hashRate1hETC.xlsx','ETC1')
-            assert count==1+24 #表头+数据
-
-            self.exportHashrate(newHeaders, minerId, '10m')
-            count = getRowsCount('./download/hashRate10mETC.xlsx', 'ETC1')
-            assert count == 1 + 144  # 表头+数据
-
-            self.exportHashrate(newHeaders, minerId, '1d')
-            count = getRowsCount('./download/hashRate1dETC.xlsx', 'ETC1')
-            assert count == 1 + 1  # 表头+数据
-
-
-
-            newHeaders['Coin-Type'] = 'ETH'
-
-            self.exportHashrate(newHeaders, minerId, '1h')
-            count = getRowsCount('./download/hashRate1hETH.xlsx', 'ETH1')
-            assert count == 1 + 24  # 表头+数据
-
-            self.exportHashrate(newHeaders, minerId, '10m')
-            count = getRowsCount('./download/hashRate10mETH.xlsx', 'ETH1')
-            assert count == 1 + 144  # 表头+数据
-
-            self.exportHashrate(newHeaders, minerId, '1d')
-            count = getRowsCount('./download/hashRate1dETH.xlsx', 'ETH1')
-            assert count == 1 + 1  # 表头+数据
-
-
-
-
-
-
-    '''工人模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("worker")
-    def test_worker(self):
-        RP_Token = ''
-
-        with allure.step('step1:login'):
-            RP_Token = self.login() #登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token':RP_Token
-        }
-        uid = mysqlUtil.getUidWithEmail()
-        minerName = ''
-        minerId = ''
-        with allure.step('step2:getMinerList'):
-            minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
-
-        with allure.step('step3:getWorkerList'):
-            newHeaders['Miner-Id'] = str(minerId)
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getWorkerList(newHeaders,minerId)##获取矿机列表
-        secretKey = ''
-        with allure.step('step12:createSecret'):
-            secretKey = self.createSecret(newHeaders)  # google密钥获取
-
-        with allure.step('step13:confirmGoogle'):
-            googleCode = int(getGoogleCode(secretKey))
-            self.confirmGoogle(newHeaders, secretKey, googleCode, 1)  # google验证绑定
-            googleCode = int(getGoogleCode(secretKey))
-            self.confirmGoogle(newHeaders, secretKey, googleCode, 0)  # google验证解除
-
-
-
-    '''账户管理模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("accountOpertion")
-    def test_account(self):
-
-        with allure.step('step1:sendEmailCode'):
-            self.sendEmailCode(EMALIL_CODE_FORGOT_PASSWORD) #发送忘记密码邮箱验证码
-
-
-        with allure.step('step2:checkEmailCode'):
-            self.checkUserEmail(EMALIL_CODE_FORGOT_PASSWORD)#重置密码邮箱校验
-
-        with allure.step('step3:updatePassword'):
-            self.forgot()#修改密码
-
-        RP_Token = ''
-
-        with allure.step('step4:login'):
-            RP_Token = self.login() #登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token':RP_Token
-        }
-        uid = mysqlUtil.getUidWithEmail()
-
-        with allure.step('step5:loginHIstory'):
-            self.loginHistory(newHeaders)#获取登陆历史
-
-        with allure.step('step6:info'):
-            self.info(newHeaders)#获取用户信息
-
-
-        with allure.step('step7:updateETHUser'):
-            self.updateETHUser(headers,uid)#更新用户信息
-
-        with allure.step('step8:sendEmailCode'):
-            self.sendEmailCode(EMALIL_CODE_SECOND_AUTH_ON)#发送开启二次验证的验证码
-        with allure.step('step9:checkEmailCode'):
-            self.checkUserEmail(EMALIL_CODE_SECOND_AUTH_ON)#开启二次验证校验
-        with allure.step('step:10:updateSecondAuth'):
-            code = redisUtil.getEmailCode(EMALIL_CODE_SECOND_AUTH_ON)
-            self.updateSecondAuth(newHeaders,1,code)#开启二次验证
-
-        with allure.step('step11:sendEmailCode'):
-            self.sendEmailCode(EMALIL_CODE_SECOND_AUTH_LOGIN)#发送二次验证登陆验证码
-
-        with allure.step('step12:loginBysecondAuth'):
-            code = redisUtil.getEmailCode(EMALIL_CODE_SECOND_AUTH_LOGIN)
-            RP_Token = self.login(verifyCode=code)#二次验证登陆
-
-        newHeaders['RP-Token'] = RP_Token
-
-        with allure.step('step8:sendEmailCode'):
-            self.sendEmailCode(EMALIL_CODE_SECOND_AUTH_OFF)#发送关闭二次验证的验证码
-        with allure.step('step9:checkEmailCode'):
-            self.checkUserEmail(EMALIL_CODE_SECOND_AUTH_OFF)#关闭二次验证校验
-        with allure.step('step:10:updateSecondAuth'):
-            code = redisUtil.getEmailCode(EMALIL_CODE_SECOND_AUTH_OFF)
-            self.updateSecondAuth(newHeaders,0,code)#关闭二次验证
-
-
-
-
-
-
-
-
-
-    '''收益模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("earn")
-    def test_earn(self):
-
-
-        RP_Token = ''
-        with allure.step('step1:login'):
-            RP_Token = self.login() #登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token':RP_Token
-        }
-        uid = mysqlUtil.getUidWithEmail()
-
-
-        minerName = ''
-        minerId = ''
-        with allure.step('step2:getMinerList'):
-            minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
-
-
-        newHeaders['Miner-Id'] = str(minerId)
-
-        with allure.step('step3:getMinerEarnSummary'):
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getMinerEarnSummary(newHeaders,minerId)#获取用户子账号天收益图表数据
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getMinerEarnSummary(newHeaders, minerId)
-
-
-        with allure.step('step4:getMinerEarnList'):
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getMinerEarnList(newHeaders,minerId)#获取用户子账号收益列表
-
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getMinerEarnList(newHeaders,minerId)#获取用户子账号收益列表
-
-        with allure.step('step5:getPaymentRecordList'):
-            newHeaders['Coin-Type'] = 'ETC'
-            newHeaders['timezone'] = '8'
-            self.getPaymentRecordList(newHeaders,minerId)#获取用户子账号收益列表
-
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getPaymentRecordList(newHeaders,minerId)#获取用户子账号收益列表
-
-
-
-    '''观察者模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("watch")
-    def test_watch(self):
-        RP_Token = ''
-        with allure.step('step1:login'):
-            RP_Token = self.login() #登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token':RP_Token
-        }
-        uid = mysqlUtil.getUidWithEmail()
-        minerName = ''
-        minerId = ''
-        with allure.step('step2:getMinerList'):
-            minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
-
-        newHeaders['Miner-Id'] = str(minerId)
-
-        with allure.step('step3:createObserveLink'):
-            self.createObserveLink(newHeaders,minerId)#创建观察者连接
-
-        watchToken = ''
-        watchId = ''
-        with allure.step('step4:watch'):
-            watchToken,watchId = self.watch(newHeaders)#获取观察者列表
-
-
-        with allure.step('step5:getMiner'):
-            self.getMiner(watchToken)#获取观察者链接子账号信息
-
-        with allure.step('step5:getStatSummaryWatch'):
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getStatSummaryWatch(newHeaders,watchToken)#获取观察者链接权限
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getStatSummaryWatch(newHeaders, watchToken)  # 获取观察者链接权限
-
-        with allure.step('step6:getHashRateWatch'):
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getHashRateWatch(newHeaders,'10m',watchToken)#获取观察者链接算力统计
-            self.getHashRateWatch(newHeaders, '1h', watchToken)  # 获取观察者链接算力统计
-            self.getHashRateWatch(newHeaders, '1d', watchToken)  # 获取观察者链接算力统计
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getHashRateWatch(newHeaders,'10m',watchToken)#获取观察者链接算力统计
-            self.getHashRateWatch(newHeaders, '1h', watchToken)  # 获取观察者链接算力统计
-            self.getHashRateWatch(newHeaders, '1d', watchToken)  # 获取观察者链接算力统计
-
-        with allure.step('step7:getMinerEarnSummaryWatch'):
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getMinerEarnSummaryWatch(newHeaders,watchToken)#获取观察者链接收益算力统计
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getMinerEarnSummaryWatch(newHeaders,watchToken)#获取观察者链接收益算力统计
-
-        with allure.step('step8:getMinerEarnListWatch'):
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getMinerEarnListWatch(newHeaders,watchToken)#获取观察者链接收益列表
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getMinerEarnListWatch(newHeaders,watchToken)#获取观察者链接收益列表
-
-        with allure.step('step9:getWorkerListWatch'):
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getWorkerListWatch(newHeaders,watchToken)#获取观察者链接矿机列表
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getWorkerListWatch(newHeaders,watchToken)#获取观察者链接矿机列表
-
-        with allure.step('step10:deleteWatch'):
-            self.deleteWatch(newHeaders,watchId)#删除观察者连接
-
-        with allure.step('step11:addFavorites'):
-            self.favorites(newHeaders,0)#新增收藏者
-
-        favId = ''
-        with allure.step('step11:getFavList'):
-            favId = self.getFavList(newHeaders)#获取收藏连接
-
-
-        with allure.step('step12:deleteFavorites'):
-            self.favorites(newHeaders,1,favId)#删除收藏
-
-
-
-    '''邀请模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("invitation")
-    def test_invitation(self):
-
-        RP_Token = ''
-        with allure.step('step1:login'):
-            RP_Token = self.login()  # 登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token': RP_Token
-        }
-
-        invitationCode = ''
-        with allure.step('step2:createUserInvitationCode'):
-            invitationCode = self.createUserInvitationCode(newHeaders)#获取邀请码
-
-        with allure.step('step3:getUserInvitationInfo'):
-            self.getUserInvitationInfo(newHeaders)#获取邀请页面大部分数据的接口
-
-        uid = mysqlUtil.getUidWithEmail()
-        minerName = ''
-        minerId = ''
-        with allure.step('step4:getMinerList'):
-            minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
-
-        with allure.step('step5:updateCommissionMinerId'):
-            self.updateCommissionMinerId(newHeaders,minerId)#换绑返佣子账号
-
-        with allure.step('step6:callInvitationCode'):
-            self.callInvitationCode(invitationCode)#统计渠道邀请码
-
-
-
-    '''子账号设置模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("minerSetting")
-    def test_minerSetting(self):
-        RP_Token = ''
-        with allure.step('step1:login'):
-            RP_Token = self.login()  # 登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token': RP_Token
-        }
-
-        uid = mysqlUtil.getUidWithEmail()
-        minerName = ''
-        minerId = ''
-        with allure.step('step2:getMinerList'):
-            minerName, minerId = self.getMinerList(newHeaders, uid)  # 获取子账户列表
-
-
-        with allure.step('step3:getMinerSetting'):
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getMinerSetting(newHeaders,minerId)#获取子账号设置
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getMinerSetting(newHeaders,minerId)#获取子账号设置
-
-        # with allure.step('step4:getPayAddressCode'):
-        #     newHeaders['Miner-Id'] = str(minerId)
-        #     self.getPayAddressCode(newHeaders,minerId)#二次验证发送邮箱验证码
-        #
-        #
-        # code = redisUtil.getSettingMinerEmailCode(minerId)#二次验证码
-        #
-        # with allure.step('step5:minerSettingETH'):
-        #     self.minerSetting(newHeaders,minerId,'ETH',code)#配置子账号设置
-
-
-        with allure.step('step6:getPayAddressCode'):
-            newHeaders['Miner-Id'] = str(minerId)
-            self.getPayAddressCode(newHeaders, minerId)  # 二次验证发送邮箱验证码
-
-        code = redisUtil.getSettingMinerEmailCode(minerId)  # 二次验证码
-        with allure.step('step7:minerSettingETC'):
-            self.minerSetting(newHeaders, minerId, 'ETC', code)  # 配置子账号设置
-
-
-        with allure.step('step8:getMinerNotifySettingList'):
-            newHeaders['Coin-Type']='ETH'
-            self.getMinerNotifySettingList(newHeaders,uid)#获取子账号通知配置列表
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getMinerNotifySettingList(newHeaders, uid)  # 获取子账号通知配置列表
-
-
-        with allure.step('step9:getMinerNotifySetting'):
-            newHeaders['Coin-Type'] = 'ETH'
-            self.getMinerNotifySetting(newHeaders,minerId)#获取子账号通知配置
-            newHeaders['Coin-Type'] = 'ETC'
-            self.getMinerNotifySetting(newHeaders, minerId)  # 获取子账号通知配置
-
-
-        with allure.step('step10:editMinerNotifySetting'):
-            newHeaders['Coin-Type'] = 'ETH'
-            self.editMinerNotifySetting(newHeaders,minerId,'ETH')
-            newHeaders['Coin-Type'] = 'ETC'
-            self.editMinerNotifySetting(newHeaders,minerId,'ETC')
-
-
-        with allure.step('step11:deletedMiner'):
-            self.deletedMiner(newHeaders,minerId,uid)#删除子账号
+    # '''工人模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("worker")
+    # def test_worker(self):
+    #     RP_Token = ''
+    #
+    #     with allure.step('step1:login'):
+    #         RP_Token = self.login() #登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token':RP_Token
+    #     }
+    #     uid = mysqlUtil.getUidWithEmail()
+    #     minerName = ''
+    #     minerId = ''
+    #     with allure.step('step2:getMinerList'):
+    #         minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
+    #
+    #     with allure.step('step3:getWorkerList'):
+    #         newHeaders['Miner-Id'] = str(minerId)
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getWorkerList(newHeaders,minerId)##获取矿机列表
+    #     secretKey = ''
+    #     with allure.step('step12:createSecret'):
+    #         secretKey = self.createSecret(newHeaders)  # google密钥获取
+    #
+    #     with allure.step('step13:confirmGoogle'):
+    #         googleCode = int(getGoogleCode(secretKey))
+    #         self.confirmGoogle(newHeaders, secretKey, googleCode, 1)  # google验证绑定
+    #         googleCode = int(getGoogleCode(secretKey))
+    #         self.confirmGoogle(newHeaders, secretKey, googleCode, 0)  # google验证解除
+
+
+    #
+    # '''账户管理模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("accountOpertion")
+    # def test_account(self):
+    #
+    #     with allure.step('step1:sendEmailCode'):
+    #         self.sendEmailCode(EMALIL_CODE_FORGOT_PASSWORD) #发送忘记密码邮箱验证码
+    #
+    #
+    #     with allure.step('step2:checkEmailCode'):
+    #         self.checkUserEmail(EMALIL_CODE_FORGOT_PASSWORD)#重置密码邮箱校验
+    #
+    #     with allure.step('step3:updatePassword'):
+    #         self.forgot()#修改密码
+    #
+    #     RP_Token = ''
+    #
+    #     with allure.step('step4:login'):
+    #         RP_Token = self.login() #登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token':RP_Token
+    #     }
+    #     uid = mysqlUtil.getUidWithEmail()
+    #
+    #     with allure.step('step5:loginHIstory'):
+    #         self.loginHistory(newHeaders)#获取登陆历史
+    #
+    #     with allure.step('step6:info'):
+    #         self.info(newHeaders)#获取用户信息
+    #
+    #
+    #     with allure.step('step7:updateETHUser'):
+    #         self.updateETHUser(headers,uid)#更新用户信息
+    #
+    #     with allure.step('step8:sendEmailCode'):
+    #         self.sendEmailCode(EMALIL_CODE_SECOND_AUTH_ON)#发送开启二次验证的验证码
+    #     with allure.step('step9:checkEmailCode'):
+    #         self.checkUserEmail(EMALIL_CODE_SECOND_AUTH_ON)#开启二次验证校验
+    #     with allure.step('step:10:updateSecondAuth'):
+    #         code = redisUtil.getEmailCode(EMALIL_CODE_SECOND_AUTH_ON)
+    #         self.updateSecondAuth(newHeaders,1,code)#开启二次验证
+    #
+    #     with allure.step('step11:sendEmailCode'):
+    #         self.sendEmailCode(EMALIL_CODE_SECOND_AUTH_LOGIN)#发送二次验证登陆验证码
+    #
+    #     with allure.step('step12:loginBysecondAuth'):
+    #         code = redisUtil.getEmailCode(EMALIL_CODE_SECOND_AUTH_LOGIN)
+    #         RP_Token = self.login(verifyCode=code)#二次验证登陆
+    #
+    #     newHeaders['RP-Token'] = RP_Token
+    #
+    #     with allure.step('step8:sendEmailCode'):
+    #         self.sendEmailCode(EMALIL_CODE_SECOND_AUTH_OFF)#发送关闭二次验证的验证码
+    #     with allure.step('step9:checkEmailCode'):
+    #         self.checkUserEmail(EMALIL_CODE_SECOND_AUTH_OFF)#关闭二次验证校验
+    #     with allure.step('step:10:updateSecondAuth'):
+    #         code = redisUtil.getEmailCode(EMALIL_CODE_SECOND_AUTH_OFF)
+    #         self.updateSecondAuth(newHeaders,0,code)#关闭二次验证
+
+
+
+
+
+
+
+
+
+    # '''收益模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("earn")
+    # def test_earn(self):
+    #
+    #
+    #     RP_Token = ''
+    #     with allure.step('step1:login'):
+    #         RP_Token = self.login() #登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token':RP_Token
+    #     }
+    #     uid = mysqlUtil.getUidWithEmail()
+    #
+    #
+    #     minerName = ''
+    #     minerId = ''
+    #     with allure.step('step2:getMinerList'):
+    #         minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
+    #
+    #
+    #     newHeaders['Miner-Id'] = str(minerId)
+    #
+    #     with allure.step('step3:getMinerEarnSummary'):
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getMinerEarnSummary(newHeaders,minerId)#获取用户子账号天收益图表数据
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getMinerEarnSummary(newHeaders, minerId)
+    #
+    #
+    #     with allure.step('step4:getMinerEarnList'):
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getMinerEarnList(newHeaders,minerId)#获取用户子账号收益列表
+    #
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getMinerEarnList(newHeaders,minerId)#获取用户子账号收益列表
+    #
+    #     with allure.step('step5:getPaymentRecordList'):
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         newHeaders['timezone'] = '8'
+    #         self.getPaymentRecordList(newHeaders,minerId)#获取用户子账号收益列表
+    #
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getPaymentRecordList(newHeaders,minerId)#获取用户子账号收益列表
+
+
+
+    # '''观察者模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("watch")
+    # def test_watch(self):
+    #     RP_Token = ''
+    #     with allure.step('step1:login'):
+    #         RP_Token = self.login() #登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token':RP_Token
+    #     }
+    #     uid = mysqlUtil.getUidWithEmail()
+    #     minerName = ''
+    #     minerId = ''
+    #     with allure.step('step2:getMinerList'):
+    #         minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
+    #
+    #     newHeaders['Miner-Id'] = str(minerId)
+    #
+    #     with allure.step('step3:createObserveLink'):
+    #         self.createObserveLink(newHeaders,minerId)#创建观察者连接
+    #
+    #     watchToken = ''
+    #     watchId = ''
+    #     with allure.step('step4:watch'):
+    #         watchToken,watchId = self.watch(newHeaders)#获取观察者列表
+    #
+    #
+    #     with allure.step('step5:getMiner'):
+    #         self.getMiner(watchToken)#获取观察者链接子账号信息
+    #
+    #     with allure.step('step5:getStatSummaryWatch'):
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getStatSummaryWatch(newHeaders,watchToken)#获取观察者链接权限
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getStatSummaryWatch(newHeaders, watchToken)  # 获取观察者链接权限
+    #
+    #     with allure.step('step6:getHashRateWatch'):
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getHashRateWatch(newHeaders,'10m',watchToken)#获取观察者链接算力统计
+    #         self.getHashRateWatch(newHeaders, '1h', watchToken)  # 获取观察者链接算力统计
+    #         self.getHashRateWatch(newHeaders, '1d', watchToken)  # 获取观察者链接算力统计
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getHashRateWatch(newHeaders,'10m',watchToken)#获取观察者链接算力统计
+    #         self.getHashRateWatch(newHeaders, '1h', watchToken)  # 获取观察者链接算力统计
+    #         self.getHashRateWatch(newHeaders, '1d', watchToken)  # 获取观察者链接算力统计
+    #
+    #     with allure.step('step7:getMinerEarnSummaryWatch'):
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getMinerEarnSummaryWatch(newHeaders,watchToken)#获取观察者链接收益算力统计
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getMinerEarnSummaryWatch(newHeaders,watchToken)#获取观察者链接收益算力统计
+    #
+    #     with allure.step('step8:getMinerEarnListWatch'):
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getMinerEarnListWatch(newHeaders,watchToken)#获取观察者链接收益列表
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getMinerEarnListWatch(newHeaders,watchToken)#获取观察者链接收益列表
+    #
+    #     with allure.step('step9:getWorkerListWatch'):
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getWorkerListWatch(newHeaders,watchToken)#获取观察者链接矿机列表
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getWorkerListWatch(newHeaders,watchToken)#获取观察者链接矿机列表
+    #
+    #     with allure.step('step10:deleteWatch'):
+    #         self.deleteWatch(newHeaders,watchId)#删除观察者连接
+    #
+    #     with allure.step('step11:addFavorites'):
+    #         self.favorites(newHeaders,0)#新增收藏者
+    #
+    #     favId = ''
+    #     with allure.step('step11:getFavList'):
+    #         favId = self.getFavList(newHeaders)#获取收藏连接
+    #
+    #
+    #     with allure.step('step12:deleteFavorites'):
+    #         self.favorites(newHeaders,1,favId)#删除收藏
+
+
+
+    # '''邀请模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("invitation")
+    # def test_invitation(self):
+    #
+    #     RP_Token = ''
+    #     with allure.step('step1:login'):
+    #         RP_Token = self.login()  # 登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token': RP_Token
+    #     }
+    #
+    #     invitationCode = ''
+    #     with allure.step('step2:createUserInvitationCode'):
+    #         invitationCode = self.createUserInvitationCode(newHeaders)#获取邀请码
+    #
+    #     with allure.step('step3:getUserInvitationInfo'):
+    #         self.getUserInvitationInfo(newHeaders)#获取邀请页面大部分数据的接口
+    #
+    #     uid = mysqlUtil.getUidWithEmail()
+    #     minerName = ''
+    #     minerId = ''
+    #     with allure.step('step4:getMinerList'):
+    #         minerName,minerId = self.getMinerList(newHeaders,uid) #获取子账户列表
+    #
+    #     with allure.step('step5:updateCommissionMinerId'):
+    #         self.updateCommissionMinerId(newHeaders,minerId)#换绑返佣子账号
+    #
+    #     with allure.step('step6:callInvitationCode'):
+    #         self.callInvitationCode(invitationCode)#统计渠道邀请码
+
+
+
+    # '''子账号设置模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("minerSetting")
+    # def test_minerSetting(self):
+    #     RP_Token = ''
+    #     with allure.step('step1:login'):
+    #         RP_Token = self.login()  # 登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token': RP_Token
+    #     }
+    #
+    #     uid = mysqlUtil.getUidWithEmail()
+    #     minerName = ''
+    #     minerId = ''
+    #     with allure.step('step2:getMinerList'):
+    #         minerName, minerId = self.getMinerList(newHeaders, uid)  # 获取子账户列表
+    #
+    #
+    #     with allure.step('step3:getMinerSetting'):
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getMinerSetting(newHeaders,minerId)#获取子账号设置
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getMinerSetting(newHeaders,minerId)#获取子账号设置
+    #
+    #     # with allure.step('step4:getPayAddressCode'):
+    #     #     newHeaders['Miner-Id'] = str(minerId)
+    #     #     self.getPayAddressCode(newHeaders,minerId)#二次验证发送邮箱验证码
+    #     #
+    #     #
+    #     # code = redisUtil.getSettingMinerEmailCode(minerId)#二次验证码
+    #     #
+    #     # with allure.step('step5:minerSettingETH'):
+    #     #     self.minerSetting(newHeaders,minerId,'ETH',code)#配置子账号设置
+    #
+    #
+    #     with allure.step('step6:getPayAddressCode'):
+    #         newHeaders['Miner-Id'] = str(minerId)
+    #         self.getPayAddressCode(newHeaders, minerId)  # 二次验证发送邮箱验证码
+    #
+    #     code = redisUtil.getSettingMinerEmailCode(minerId)  # 二次验证码
+    #     with allure.step('step7:minerSettingETC'):
+    #         self.minerSetting(newHeaders, minerId, 'ETC', code)  # 配置子账号设置
+    #
+    #
+    #     with allure.step('step8:getMinerNotifySettingList'):
+    #         newHeaders['Coin-Type']='ETH'
+    #         self.getMinerNotifySettingList(newHeaders,uid)#获取子账号通知配置列表
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getMinerNotifySettingList(newHeaders, uid)  # 获取子账号通知配置列表
+    #
+    #
+    #     with allure.step('step9:getMinerNotifySetting'):
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.getMinerNotifySetting(newHeaders,minerId)#获取子账号通知配置
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.getMinerNotifySetting(newHeaders, minerId)  # 获取子账号通知配置
+    #
+    #
+    #     with allure.step('step10:editMinerNotifySetting'):
+    #         newHeaders['Coin-Type'] = 'ETH'
+    #         self.editMinerNotifySetting(newHeaders,minerId,'ETH')
+    #         newHeaders['Coin-Type'] = 'ETC'
+    #         self.editMinerNotifySetting(newHeaders,minerId,'ETC')
+    #
+    #
+    #     with allure.step('step11:deletedMiner'):
+    #         self.deletedMiner(newHeaders,minerId,uid)#删除子账号
 
 
 

@@ -1,5 +1,5 @@
 '''ehash矿池地址'''
-NEW_EHASHPOOL_ADDRESS = 'http://ehashapi.test.poolx.io:81'
+NEW_EHASHPOOL_ADDRESS = 'http://ehashapi.test.poolx.io'
 OLD_EHASHPOOL_ADDRESS = 'http://ehashapi.test.poolx.io'
 
 '''ehash数据库配置'''

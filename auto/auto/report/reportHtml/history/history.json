@@ -1,172 +1,21 @@
 {
-  "1b70fc7bae464b0ff2c5b1aee4f38197" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "423925f015222b6d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248519411,
-        "stop" : 1663248521592,
-        "duration" : 2181
-      }
-    } ]
-  },
-  "d896b888fe29f24471f9f3b13d6c7d4f" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "5a76a6016568542b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248521595,
-        "stop" : 1663248527907,
-        "duration" : 6312
-      }
-    } ]
-  },
-  "b6bfb177b09b22671c9d00165aa81747" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "7c1d4475e504306d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248527911,
-        "stop" : 1663248531737,
-        "duration" : 3826
-      }
-    } ]
-  },
   "db825ba62b1e09e5292c0990fccbb807" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ba5222f61427ca0d",
-      "status" : "passed",
+      "uid" : "ff3373a704c681b9",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='ehashapi.test.poolx.io', port=81): Max retries exceeded with url: /pool//v1/miner/Home (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff278a56f90>: Failed to establish a new connection: [Errno 61] Connection refused'))",
       "time" : {
-        "start" : 1663248484652,
-        "stop" : 1663248485820,
-        "duration" : 1168
-      }
-    } ]
-  },
-  "caa2e2077b1a3291e19e5cc447f9a137" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "dfe16b5a6fc878e8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248496953,
-        "stop" : 1663248519407,
-        "duration" : 22454
-      }
-    } ]
-  },
-  "40ce7ba5585293d9752ace8fb37a50e4" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b80c9da62abe3411",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248490468,
-        "stop" : 1663248495853,
-        "duration" : 5385
-      }
-    } ]
-  },
-  "728c4b576a798dd7e176f77cbb5c4da6" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "fbe631d0572eee09",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248531739,
-        "stop" : 1663248544190,
-        "duration" : 12451
-      }
-    } ]
-  },
-  "cdef6cbf002b710a36fc50c9685dc506" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "54f803a87e28d41c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248485823,
-        "stop" : 1663248490466,
-        "duration" : 4643
-      }
-    } ]
-  },
-  "1e6e1e96f9277d4c4292babcf089b6f1" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ebae1414213784de",
-      "status" : "passed",
-      "time" : {
-        "start" : 1663248495858,
-        "stop" : 1663248496950,
-        "duration" : 1092
+        "start" : 1663321374093,
+        "stop" : 1663321374148,
+        "duration" : 55
       }
     } ]
   }
