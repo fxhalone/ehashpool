@@ -1,10 +1,11 @@
 import pytest
 import os
 import shutil
+import sys
 if __name__ == '__main__':
 
     #清除历史报告文件
-    path = os.getcwd()+'/report/testResults/'
+    path = sys.path[0]+'/report/testResults/'
     if os.path.exists(path):
         shutil.rmtree(path)
     os.mkdir(path)
