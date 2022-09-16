@@ -1,30 +1,5 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ {
-    "name" : "fengxiaohuideMacBook-Pro.local",
-    "children" : [ {
-      "name" : "33873-MainThread",
-      "children" : [ {
-        "name" : "test_home",
-        "uid" : "ff3373a704c681b9",
-        "parentUid" : "8d3eb58528bfc322b72f325d41b1a3b8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1663321374093,
-          "stop" : 1663321374148,
-          "duration" : 55
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8d3eb58528bfc322b72f325d41b1a3b8"
-    } ],
-    "uid" : "b08a3d170897b264e4c1064650832a9b"
-  } ],
+  "children" : [ ],
   "name" : "timeline"
 }

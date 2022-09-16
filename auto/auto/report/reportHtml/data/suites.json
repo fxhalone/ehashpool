@@ -1,34 +1,5 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ {
-    "name" : "testcase",
-    "children" : [ {
-      "name" : "test_ehashpool",
-      "children" : [ {
-        "name" : "test_ehashpool",
-        "children" : [ {
-          "name" : "test_home",
-          "uid" : "ff3373a704c681b9",
-          "parentUid" : "371be87c2c15871ff3a5e5ea41d326d3",
-          "status" : "broken",
-          "time" : {
-            "start" : 1663321374093,
-            "stop" : 1663321374148,
-            "duration" : 55
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "371be87c2c15871ff3a5e5ea41d326d3"
-      } ],
-      "uid" : "dd3a1fba8bd01a93ad651a7d035c07b3"
-    } ],
-    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ],
+  "children" : [ ],
   "name" : "suites"
 }

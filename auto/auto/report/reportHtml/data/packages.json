@@ -1,26 +1,5 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ {
-    "name" : "testcase.test_ehashpool",
-    "children" : [ {
-      "name" : "test_home",
-      "uid" : "ff3373a704c681b9",
-      "parentUid" : "ad3a4ab1a7e9556c25ceabc9dd6ee3ee",
-      "status" : "broken",
-      "time" : {
-        "start" : 1663321374093,
-        "stop" : 1663321374148,
-        "duration" : 55
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ ]
-    } ],
-    "uid" : "testcase.test_ehashpool"
-  } ],
+  "children" : [ ],
   "name" : "packages"
 }
