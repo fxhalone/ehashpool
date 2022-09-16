@@ -1,18 +1,18 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "fengxiaohuideMacBook-Pro.local",
+    "name" : "localhost",
     "children" : [ {
-      "name" : "34396-MainThread",
+      "name" : "34684-MainThread",
       "children" : [ {
         "name" : "test_home",
-        "uid" : "482f4be580c657cc",
-        "parentUid" : "cb853ecb29ec34b597e3c5e0fd843d0f",
+        "uid" : "d74ff91c60a0efee",
+        "parentUid" : "429e4c155624938aac9e68dfb1c499d5",
         "status" : "passed",
         "time" : {
-          "start" : 1663322799037,
-          "stop" : 1663322799205,
-          "duration" : 168
+          "start" : 1663324498255,
+          "stop" : 1663324500669,
+          "duration" : 2414
         },
         "flaky" : false,
         "newFailed" : false,
@@ -22,9 +22,9 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "cb853ecb29ec34b597e3c5e0fd843d0f"
+      "uid" : "429e4c155624938aac9e68dfb1c499d5"
     } ],
-    "uid" : "b08a3d170897b264e4c1064650832a9b"
+    "uid" : "be30f600e0434356d35178c8efd2dc81"
   } ],
   "name" : "timeline"
 }

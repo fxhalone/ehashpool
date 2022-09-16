@@ -6,13 +6,13 @@
       "name" : "home",
       "children" : [ {
         "name" : "test_home",
-        "uid" : "482f4be580c657cc",
+        "uid" : "d74ff91c60a0efee",
         "parentUid" : "3c48d8f1d40493923f4b07868ef44d25",
         "status" : "passed",
         "time" : {
-          "start" : 1663322799037,
-          "stop" : 1663322799205,
-          "duration" : 168
+          "start" : 1663324498255,
+          "stop" : 1663324500669,
+          "duration" : 2414
         },
         "flaky" : false,
         "newFailed" : false,

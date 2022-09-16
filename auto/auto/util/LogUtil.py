@@ -15,8 +15,8 @@ class LogUtil:
         logger.setLevel(logging.INFO)  # Log等级总开关
         #创建一个handler，用于写入日志文件
         rq = time.strftime('%Y%m%d', time.localtime(time.time()))
-        log_path =  os.getcwd()+ '/log/rqtasklog.txt'
-        print(os.getcwd())
+        log_path =  os.path.abspath('.')+ '/log/rqtasklog.txt'
+
         # logfile = log_path + rq + '.log'
         fh = logging.FileHandler(log_path, mode='a')#累加
         fh.setLevel(logging.INFO)
@@ -30,7 +30,7 @@ class LogUtil:
 
 
 if __name__ == '__main__':
-    pass
+    LogUtil.initLogger()
     # hear = {
     #     "RP-Token":'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjE5NDc4NTUsImlhdCI6MTY2MTk0NDI1NSwidWlkIjoxMDMxNSwidXNlcm5hbWUiOiIiLCJwaWQiOjB9.trQVfn1TZ6txHBvBFbDguddDubMq8eFGf1NuTq3uAKI'
     #
