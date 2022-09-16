@@ -4,7 +4,7 @@ import shutil
 if __name__ == '__main__':
 
     #清除历史报告文件
-    path = os.getcwd()+'/report/testResults/'
+    path = os.path.dirname(os.getcwd())+'/auto/report/testResults/'
     if os.path.exists(path):
         shutil.rmtree(path)
     os.mkdir(path)
