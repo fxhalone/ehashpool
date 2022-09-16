@@ -1,6 +1,7 @@
 import logging
 import os.path
 import time
+import sys
 
 class LogUtil:
 
@@ -14,7 +15,7 @@ class LogUtil:
         logger.setLevel(logging.INFO)  # Log等级总开关
         #创建一个handler，用于写入日志文件
         rq = time.strftime('%Y%m%d', time.localtime(time.time()))
-        log_path = os.path.dirname(os.getcwd()) + '/auto/log/rqtasklog.txt'
+        log_path =  sys.path[0]+ '/log/rqtasklog.txt'
         # logfile = log_path + rq + '.log'
         fh = logging.FileHandler(log_path, mode='a')#累加
         fh.setLevel(logging.INFO)
