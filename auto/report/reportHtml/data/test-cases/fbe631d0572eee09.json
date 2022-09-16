@@ -1,0 +1,631 @@
+{
+  "uid" : "fbe631d0572eee09",
+  "name" : "test_minerSetting",
+  "fullName" : "testcase.test_ehashpool.test_ehashpool#test_minerSetting",
+  "historyId" : "728c4b576a798dd7e176f77cbb5c4da6",
+  "time" : {
+    "start" : 1663248531739,
+    "stop" : 1663248544190,
+    "duration" : 12451
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool",
+    "time" : {
+      "start" : 1663248484226,
+      "stop" : 1663248484650,
+      "duration" : 424
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step1:login",
+      "time" : {
+        "start" : 1663248531739,
+        "stop" : 1663248532845,
+        "duration" : 1106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7ff5f845e478afd0",
+        "name" : "url",
+        "source" : "7ff5f845e478afd0.html",
+        "type" : "text/html",
+        "size" : 68
+      }, {
+        "uid" : "b6c57c259e6f88ba",
+        "name" : "method",
+        "source" : "b6c57c259e6f88ba.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "623175c1d318eb24",
+        "name" : "headers",
+        "source" : "623175c1d318eb24.html",
+        "type" : "text/html",
+        "size" : 75
+      }, {
+        "uid" : "cd6ff8b0f92fb976",
+        "name" : "requestData",
+        "source" : "cd6ff8b0f92fb976.html",
+        "type" : "text/html",
+        "size" : 95
+      }, {
+        "uid" : "dd2239d898bc611c",
+        "name" : "responseData",
+        "source" : "dd2239d898bc611c.html",
+        "type" : "text/html",
+        "size" : 260
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step2:getMinerList",
+      "time" : {
+        "start" : 1663248533067,
+        "stop" : 1663248533168,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f89ecc3dc45e6f90",
+        "name" : "url",
+        "source" : "f89ecc3dc45e6f90.html",
+        "type" : "text/html",
+        "size" : 82
+      }, {
+        "uid" : "6443e770a2d366e0",
+        "name" : "method",
+        "source" : "6443e770a2d366e0.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "bb2c77fdbf668ce7",
+        "name" : "headers",
+        "source" : "bb2c77fdbf668ce7.html",
+        "type" : "text/html",
+        "size" : 264
+      }, {
+        "uid" : "e2279a3a2f69607f",
+        "name" : "requestData",
+        "source" : "e2279a3a2f69607f.html",
+        "type" : "text/html",
+        "size" : 23
+      }, {
+        "uid" : "d3fc422a93c3e684",
+        "name" : "responseData",
+        "source" : "d3fc422a93c3e684.html",
+        "type" : "text/html",
+        "size" : 149
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step3:getMinerSetting",
+      "time" : {
+        "start" : 1663248533168,
+        "stop" : 1663248534625,
+        "duration" : 1457
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9e4eaf9403ac338b",
+        "name" : "url",
+        "source" : "9e4eaf9403ac338b.html",
+        "type" : "text/html",
+        "size" : 71
+      }, {
+        "uid" : "29906705ff936be4",
+        "name" : "method",
+        "source" : "29906705ff936be4.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "dbf00a7fd7e6e2a4",
+        "name" : "headers",
+        "source" : "dbf00a7fd7e6e2a4.html",
+        "type" : "text/html",
+        "size" : 284
+      }, {
+        "uid" : "7e1ef80583736bb3",
+        "name" : "params",
+        "source" : "7e1ef80583736bb3.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "6ccb8dd167e2167e",
+        "name" : "responseData",
+        "source" : "6ccb8dd167e2167e.html",
+        "type" : "text/html",
+        "size" : 300
+      }, {
+        "uid" : "5d0ef4d76f967dff",
+        "name" : "url",
+        "source" : "5d0ef4d76f967dff.html",
+        "type" : "text/html",
+        "size" : 71
+      }, {
+        "uid" : "7f7deffcc152eff2",
+        "name" : "method",
+        "source" : "7f7deffcc152eff2.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "e6398baa4cfc3e63",
+        "name" : "headers",
+        "source" : "e6398baa4cfc3e63.html",
+        "type" : "text/html",
+        "size" : 284
+      }, {
+        "uid" : "ab20896ef3122fad",
+        "name" : "params",
+        "source" : "ab20896ef3122fad.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "f12428c9f927e736",
+        "name" : "responseData",
+        "source" : "f12428c9f927e736.html",
+        "type" : "text/html",
+        "size" : 300
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step6:getPayAddressCode",
+      "time" : {
+        "start" : 1663248534625,
+        "stop" : 1663248537413,
+        "duration" : 2788
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "658efae735165982",
+        "name" : "url",
+        "source" : "658efae735165982.html",
+        "type" : "text/html",
+        "size" : 87
+      }, {
+        "uid" : "34a044d7048a817e",
+        "name" : "method",
+        "source" : "34a044d7048a817e.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "84d959a79de75155",
+        "name" : "params",
+        "source" : "84d959a79de75155.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "54c0c3c3f4f24824",
+        "name" : "headers",
+        "source" : "54c0c3c3f4f24824.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "c8df77b8a7616c47",
+        "name" : "responseData",
+        "source" : "c8df77b8a7616c47.html",
+        "type" : "text/html",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step7:minerSettingETC",
+      "time" : {
+        "start" : 1663248537549,
+        "stop" : 1663248537649,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ca9a19fa85f6c299",
+        "name" : "url",
+        "source" : "ca9a19fa85f6c299.html",
+        "type" : "text/html",
+        "size" : 68
+      }, {
+        "uid" : "9dabefa755109be8",
+        "name" : "method",
+        "source" : "9dabefa755109be8.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "763ca7628057fa19",
+        "name" : "headers",
+        "source" : "763ca7628057fa19.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "b1827842205040a7",
+        "name" : "requestData",
+        "source" : "b1827842205040a7.html",
+        "type" : "text/html",
+        "size" : 229
+      }, {
+        "uid" : "6c4e19657203c448",
+        "name" : "responseData",
+        "source" : "6c4e19657203c448.html",
+        "type" : "text/html",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step8:getMinerNotifySettingList",
+      "time" : {
+        "start" : 1663248537649,
+        "stop" : 1663248538848,
+        "duration" : 1199
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ebe2e2d418d38ed8",
+        "name" : "url",
+        "source" : "ebe2e2d418d38ed8.html",
+        "type" : "text/html",
+        "size" : 82
+      }, {
+        "uid" : "8710d5ebf0852005",
+        "name" : "method",
+        "source" : "8710d5ebf0852005.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "ddabe458db5f9167",
+        "name" : "params",
+        "source" : "ddabe458db5f9167.html",
+        "type" : "text/html",
+        "size" : 50
+      }, {
+        "uid" : "493500068d026209",
+        "name" : "headers",
+        "source" : "493500068d026209.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "825a4457d3a965e",
+        "name" : "responseData",
+        "source" : "825a4457d3a965e.html",
+        "type" : "text/html",
+        "size" : 235
+      }, {
+        "uid" : "6693f905679f489c",
+        "name" : "url",
+        "source" : "6693f905679f489c.html",
+        "type" : "text/html",
+        "size" : 82
+      }, {
+        "uid" : "2c936998134bcf31",
+        "name" : "method",
+        "source" : "2c936998134bcf31.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "82ad315a23c630d8",
+        "name" : "params",
+        "source" : "82ad315a23c630d8.html",
+        "type" : "text/html",
+        "size" : 50
+      }, {
+        "uid" : "ce71b40e509c080d",
+        "name" : "headers",
+        "source" : "ce71b40e509c080d.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "9568262fba2ee4fd",
+        "name" : "responseData",
+        "source" : "9568262fba2ee4fd.html",
+        "type" : "text/html",
+        "size" : 235
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step9:getMinerNotifySetting",
+      "time" : {
+        "start" : 1663248538848,
+        "stop" : 1663248541160,
+        "duration" : 2312
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ab85e2942c2c69d9",
+        "name" : "url",
+        "source" : "ab85e2942c2c69d9.html",
+        "type" : "text/html",
+        "size" : 78
+      }, {
+        "uid" : "1a8db215f7d65fd2",
+        "name" : "method",
+        "source" : "1a8db215f7d65fd2.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "c5f5de2a261093c3",
+        "name" : "params",
+        "source" : "c5f5de2a261093c3.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "b7c073b272e5fcf0",
+        "name" : "headers",
+        "source" : "b7c073b272e5fcf0.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "49f0742e852811f",
+        "name" : "responseData",
+        "source" : "49f0742e852811f.html",
+        "type" : "text/html",
+        "size" : 159
+      }, {
+        "uid" : "804f4b886502e7ae",
+        "name" : "url",
+        "source" : "804f4b886502e7ae.html",
+        "type" : "text/html",
+        "size" : 78
+      }, {
+        "uid" : "7d21d68294feea1f",
+        "name" : "method",
+        "source" : "7d21d68294feea1f.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "18f68edbee172e4d",
+        "name" : "params",
+        "source" : "18f68edbee172e4d.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "95ac9b71b436d8ea",
+        "name" : "headers",
+        "source" : "95ac9b71b436d8ea.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "21a0c60ba85f86ec",
+        "name" : "responseData",
+        "source" : "21a0c60ba85f86ec.html",
+        "type" : "text/html",
+        "size" : 159
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step10:editMinerNotifySetting",
+      "time" : {
+        "start" : 1663248541160,
+        "stop" : 1663248544097,
+        "duration" : 2937
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "47a5b9582bce588d",
+        "name" : "url",
+        "source" : "47a5b9582bce588d.html",
+        "type" : "text/html",
+        "size" : 79
+      }, {
+        "uid" : "2b25374cba1da7ba",
+        "name" : "method",
+        "source" : "2b25374cba1da7ba.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "ac07062e0dd4a33",
+        "name" : "headers",
+        "source" : "ac07062e0dd4a33.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "18aafb318a49b748",
+        "name" : "requestData",
+        "source" : "18aafb318a49b748.html",
+        "type" : "text/html",
+        "size" : 157
+      }, {
+        "uid" : "4fa48d60239274a2",
+        "name" : "responseData",
+        "source" : "4fa48d60239274a2.html",
+        "type" : "text/html",
+        "size" : 57
+      }, {
+        "uid" : "a8085c1c71064531",
+        "name" : "url",
+        "source" : "a8085c1c71064531.html",
+        "type" : "text/html",
+        "size" : 79
+      }, {
+        "uid" : "1cbce7ac48746bc9",
+        "name" : "method",
+        "source" : "1cbce7ac48746bc9.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "851477bfa057fba7",
+        "name" : "headers",
+        "source" : "851477bfa057fba7.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "aba7e55c5a896b1f",
+        "name" : "requestData",
+        "source" : "aba7e55c5a896b1f.html",
+        "type" : "text/html",
+        "size" : 157
+      }, {
+        "uid" : "f8d0336a04f02b88",
+        "name" : "responseData",
+        "source" : "f8d0336a04f02b88.html",
+        "type" : "text/html",
+        "size" : 57
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step11:deletedMiner",
+      "time" : {
+        "start" : 1663248544097,
+        "stop" : 1663248544190,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ae66c8a584ccab8c",
+        "name" : "url",
+        "source" : "ae66c8a584ccab8c.html",
+        "type" : "text/html",
+        "size" : 82
+      }, {
+        "uid" : "e5c670bd3e02044a",
+        "name" : "method",
+        "source" : "e5c670bd3e02044a.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "342f03f890d7e8c4",
+        "name" : "headers",
+        "source" : "342f03f890d7e8c4.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "4205c45b1796ecfb",
+        "name" : "requestData",
+        "source" : "4205c45b1796ecfb.html",
+        "type" : "text/html",
+        "size" : 39
+      }, {
+        "uid" : "41d8209bb4f4891f",
+        "name" : "responseData",
+        "source" : "41d8209bb4f4891f.html",
+        "type" : "text/html",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 65,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool::0",
+    "time" : {
+      "start" : 1663248544190,
+      "stop" : 1663248544190,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "EhashPool"
+  }, {
+    "name" : "feature",
+    "value" : "minerSetting"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "subSuite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "host",
+    "value" : "fengxiaohuideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "26646-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_ehashpool"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fbe631d0572eee09.json",
+  "parameterValues" : [ ]
+}

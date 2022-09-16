@@ -1,0 +1,778 @@
+{
+  "uid" : "b80c9da62abe3411",
+  "name" : "test_hashRate",
+  "fullName" : "testcase.test_ehashpool.test_ehashpool#test_hashRate",
+  "historyId" : "40ce7ba5585293d9752ace8fb37a50e4",
+  "time" : {
+    "start" : 1663248490468,
+    "stop" : 1663248495853,
+    "duration" : 5385
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool",
+    "time" : {
+      "start" : 1663248484226,
+      "stop" : 1663248484650,
+      "duration" : 424
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step1:login",
+      "time" : {
+        "start" : 1663248490469,
+        "stop" : 1663248490576,
+        "duration" : 107
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1a3150cbc64b3f5b",
+        "name" : "url",
+        "source" : "1a3150cbc64b3f5b.html",
+        "type" : "text/html",
+        "size" : 68
+      }, {
+        "uid" : "6b9d980fc0f10727",
+        "name" : "method",
+        "source" : "6b9d980fc0f10727.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "d32b8ac0cea6e143",
+        "name" : "headers",
+        "source" : "d32b8ac0cea6e143.html",
+        "type" : "text/html",
+        "size" : 75
+      }, {
+        "uid" : "965331098b60c748",
+        "name" : "requestData",
+        "source" : "965331098b60c748.html",
+        "type" : "text/html",
+        "size" : 95
+      }, {
+        "uid" : "e8e46a9e49f7c068",
+        "name" : "responseData",
+        "source" : "e8e46a9e49f7c068.html",
+        "type" : "text/html",
+        "size" : 260
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step2:createMiner",
+      "time" : {
+        "start" : 1663248490997,
+        "stop" : 1663248492109,
+        "duration" : 1112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "60c2224b0a058b47",
+        "name" : "url",
+        "source" : "60c2224b0a058b47.html",
+        "type" : "text/html",
+        "size" : 81
+      }, {
+        "uid" : "d713cf018d2d21dd",
+        "name" : "method",
+        "source" : "d713cf018d2d21dd.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "c719464841d8a23c",
+        "name" : "headers",
+        "source" : "c719464841d8a23c.html",
+        "type" : "text/html",
+        "size" : 264
+      }, {
+        "uid" : "ab5fb2715c3cea6e",
+        "name" : "requestData",
+        "source" : "ab5fb2715c3cea6e.html",
+        "type" : "text/html",
+        "size" : 53
+      }, {
+        "uid" : "3d002d14cc13faa2",
+        "name" : "responseData",
+        "source" : "3d002d14cc13faa2.html",
+        "type" : "text/html",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step3:getMinerList",
+      "time" : {
+        "start" : 1663248492109,
+        "stop" : 1663248492207,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fd26e232f481447c",
+        "name" : "url",
+        "source" : "fd26e232f481447c.html",
+        "type" : "text/html",
+        "size" : 82
+      }, {
+        "uid" : "87179f8cec3b175",
+        "name" : "method",
+        "source" : "87179f8cec3b175.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "2ac660952bccf6ad",
+        "name" : "headers",
+        "source" : "2ac660952bccf6ad.html",
+        "type" : "text/html",
+        "size" : 264
+      }, {
+        "uid" : "fdd2986efae815da",
+        "name" : "requestData",
+        "source" : "fdd2986efae815da.html",
+        "type" : "text/html",
+        "size" : 23
+      }, {
+        "uid" : "d715832d0f1874c4",
+        "name" : "responseData",
+        "source" : "d715832d0f1874c4.html",
+        "type" : "text/html",
+        "size" : 149
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step5:getStatSummary",
+      "time" : {
+        "start" : 1663248492207,
+        "stop" : 1663248492414,
+        "duration" : 207
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "110dca90d2d3596f",
+        "name" : "url",
+        "source" : "110dca90d2d3596f.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "5037a6396b6a791d",
+        "name" : "method",
+        "source" : "5037a6396b6a791d.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "4f4404b4a4d96373",
+        "name" : "headers",
+        "source" : "4f4404b4a4d96373.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "7a209822cec1c720",
+        "name" : "requestData",
+        "source" : "7a209822cec1c720.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "facb14e26326d02b",
+        "name" : "responseData",
+        "source" : "facb14e26326d02b.html",
+        "type" : "text/html",
+        "size" : 301
+      }, {
+        "uid" : "d2fadac3eb9c5f06",
+        "name" : "url",
+        "source" : "d2fadac3eb9c5f06.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "fe29c3adc0179d97",
+        "name" : "method",
+        "source" : "fe29c3adc0179d97.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "f6b509cdeda4eafd",
+        "name" : "headers",
+        "source" : "f6b509cdeda4eafd.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "fa7ac29945bdd696",
+        "name" : "requestData",
+        "source" : "fa7ac29945bdd696.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "1133f1171bcb7967",
+        "name" : "responseData",
+        "source" : "1133f1171bcb7967.html",
+        "type" : "text/html",
+        "size" : 301
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 10,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step6:getHashRate",
+      "time" : {
+        "start" : 1663248492414,
+        "stop" : 1663248494539,
+        "duration" : 2125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4d0b66778aaca43d",
+        "name" : "url",
+        "source" : "4d0b66778aaca43d.html",
+        "type" : "text/html",
+        "size" : 67
+      }, {
+        "uid" : "a092b846d33bd2f7",
+        "name" : "method",
+        "source" : "a092b846d33bd2f7.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "57685def511e09ac",
+        "name" : "headers",
+        "source" : "57685def511e09ac.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "ecb354266d5a8601",
+        "name" : "params",
+        "source" : "ecb354266d5a8601.html",
+        "type" : "text/html",
+        "size" : 78
+      }, {
+        "uid" : "e0882d88ccbfd869",
+        "name" : "requestData",
+        "source" : "e0882d88ccbfd869.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "97eeb188f651fa62",
+        "name" : "responseData",
+        "source" : "97eeb188f651fa62.html",
+        "type" : "text/html",
+        "size" : 12139
+      }, {
+        "uid" : "ab00fea0afda161d",
+        "name" : "url",
+        "source" : "ab00fea0afda161d.html",
+        "type" : "text/html",
+        "size" : 67
+      }, {
+        "uid" : "291b10d4daa35adb",
+        "name" : "method",
+        "source" : "291b10d4daa35adb.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "dfeccbff15e1790a",
+        "name" : "headers",
+        "source" : "dfeccbff15e1790a.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "a8d247ff9e1ad5e0",
+        "name" : "params",
+        "source" : "a8d247ff9e1ad5e0.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "94e9e62a6e4539d9",
+        "name" : "requestData",
+        "source" : "94e9e62a6e4539d9.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "16f538a6f5e1cb5f",
+        "name" : "responseData",
+        "source" : "16f538a6f5e1cb5f.html",
+        "type" : "text/html",
+        "size" : 2059
+      }, {
+        "uid" : "58595c1de41fc57b",
+        "name" : "url",
+        "source" : "58595c1de41fc57b.html",
+        "type" : "text/html",
+        "size" : 67
+      }, {
+        "uid" : "6ce85ce074e3c613",
+        "name" : "method",
+        "source" : "6ce85ce074e3c613.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "a4458ddcc2e2e74e",
+        "name" : "headers",
+        "source" : "a4458ddcc2e2e74e.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "8bb0308ff6defc2e",
+        "name" : "params",
+        "source" : "8bb0308ff6defc2e.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "a8bdeed542bce4ad",
+        "name" : "requestData",
+        "source" : "a8bdeed542bce4ad.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "18259ad2bee82a39",
+        "name" : "responseData",
+        "source" : "18259ad2bee82a39.html",
+        "type" : "text/html",
+        "size" : 127
+      }, {
+        "uid" : "935fd5f6c684f5d5",
+        "name" : "url",
+        "source" : "935fd5f6c684f5d5.html",
+        "type" : "text/html",
+        "size" : 67
+      }, {
+        "uid" : "3ffa7172d6c75754",
+        "name" : "method",
+        "source" : "3ffa7172d6c75754.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "657288be534def67",
+        "name" : "headers",
+        "source" : "657288be534def67.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "4cefadd4a286970f",
+        "name" : "params",
+        "source" : "4cefadd4a286970f.html",
+        "type" : "text/html",
+        "size" : 78
+      }, {
+        "uid" : "248ae47380f39442",
+        "name" : "requestData",
+        "source" : "248ae47380f39442.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "5089973fb4d29bb",
+        "name" : "responseData",
+        "source" : "5089973fb4d29bb.html",
+        "type" : "text/html",
+        "size" : 12139
+      }, {
+        "uid" : "4b2e9a7cd6b4fbf4",
+        "name" : "url",
+        "source" : "4b2e9a7cd6b4fbf4.html",
+        "type" : "text/html",
+        "size" : 67
+      }, {
+        "uid" : "d22df7cbd581579b",
+        "name" : "method",
+        "source" : "d22df7cbd581579b.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "6ad7fbb2b7e622d7",
+        "name" : "headers",
+        "source" : "6ad7fbb2b7e622d7.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "a433c1af33f636b1",
+        "name" : "params",
+        "source" : "a433c1af33f636b1.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "b17f42008b24e148",
+        "name" : "requestData",
+        "source" : "b17f42008b24e148.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "23791bcb4a87e63f",
+        "name" : "responseData",
+        "source" : "23791bcb4a87e63f.html",
+        "type" : "text/html",
+        "size" : 2059
+      }, {
+        "uid" : "f06edb839c5cdd00",
+        "name" : "url",
+        "source" : "f06edb839c5cdd00.html",
+        "type" : "text/html",
+        "size" : 67
+      }, {
+        "uid" : "f75eacc2275397de",
+        "name" : "method",
+        "source" : "f75eacc2275397de.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "7060fa8e079f563f",
+        "name" : "headers",
+        "source" : "7060fa8e079f563f.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "68e50416933e000e",
+        "name" : "params",
+        "source" : "68e50416933e000e.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "f8b173ddd534e2ee",
+        "name" : "requestData",
+        "source" : "f8b173ddd534e2ee.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "7817ad3da044e1af",
+        "name" : "responseData",
+        "source" : "7817ad3da044e1af.html",
+        "type" : "text/html",
+        "size" : 127
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 36,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step7:exportHashrate",
+      "time" : {
+        "start" : 1663248494539,
+        "stop" : 1663248495853,
+        "duration" : 1314
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "47fd66d4d2ee8d5a",
+        "name" : "url",
+        "source" : "47fd66d4d2ee8d5a.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "bdf5510760eb58d1",
+        "name" : "method",
+        "source" : "bdf5510760eb58d1.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "4fbb87813270c264",
+        "name" : "headers",
+        "source" : "4fbb87813270c264.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "f585933ea0cfdac0",
+        "name" : "params",
+        "source" : "f585933ea0cfdac0.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "d2ff35ea19d49119",
+        "name" : "requestData",
+        "source" : "d2ff35ea19d49119.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "ef61fe057f7ae8fb",
+        "name" : "responseData",
+        "source" : "ef61fe057f7ae8fb.html",
+        "type" : "text/html",
+        "size" : 15
+      }, {
+        "uid" : "2f15cb610f55783a",
+        "name" : "url",
+        "source" : "2f15cb610f55783a.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "807ad8f6c4a152f0",
+        "name" : "method",
+        "source" : "807ad8f6c4a152f0.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "b626edbfa63404a",
+        "name" : "headers",
+        "source" : "b626edbfa63404a.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "d892613551fe399d",
+        "name" : "params",
+        "source" : "d892613551fe399d.html",
+        "type" : "text/html",
+        "size" : 78
+      }, {
+        "uid" : "d0339be41ddfb06c",
+        "name" : "requestData",
+        "source" : "d0339be41ddfb06c.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "65a71817181e4a2e",
+        "name" : "responseData",
+        "source" : "65a71817181e4a2e.html",
+        "type" : "text/html",
+        "size" : 15
+      }, {
+        "uid" : "320bbd8728f0823",
+        "name" : "url",
+        "source" : "320bbd8728f0823.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "5cc9b9ea3047d404",
+        "name" : "method",
+        "source" : "5cc9b9ea3047d404.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "d4c001d0b22465c0",
+        "name" : "headers",
+        "source" : "d4c001d0b22465c0.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "12f8f1557b63a5e7",
+        "name" : "params",
+        "source" : "12f8f1557b63a5e7.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "f417a0a201485eef",
+        "name" : "requestData",
+        "source" : "f417a0a201485eef.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "c45b3d26eeba9d5f",
+        "name" : "responseData",
+        "source" : "c45b3d26eeba9d5f.html",
+        "type" : "text/html",
+        "size" : 15
+      }, {
+        "uid" : "18d7cbc9e7f4a597",
+        "name" : "url",
+        "source" : "18d7cbc9e7f4a597.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "56249dc5d8a3c222",
+        "name" : "method",
+        "source" : "56249dc5d8a3c222.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "58fbdfb5d12e8ac4",
+        "name" : "headers",
+        "source" : "58fbdfb5d12e8ac4.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "dba197c903c672ae",
+        "name" : "params",
+        "source" : "dba197c903c672ae.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "c3ec6c3bdc112aae",
+        "name" : "requestData",
+        "source" : "c3ec6c3bdc112aae.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "1f6cd9c8d0ae2bff",
+        "name" : "responseData",
+        "source" : "1f6cd9c8d0ae2bff.html",
+        "type" : "text/html",
+        "size" : 15
+      }, {
+        "uid" : "598c829db060bac4",
+        "name" : "url",
+        "source" : "598c829db060bac4.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "94c2b33a38e44c7e",
+        "name" : "method",
+        "source" : "94c2b33a38e44c7e.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "27b64b30d1035534",
+        "name" : "headers",
+        "source" : "27b64b30d1035534.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "d71f8bf087365113",
+        "name" : "params",
+        "source" : "d71f8bf087365113.html",
+        "type" : "text/html",
+        "size" : 78
+      }, {
+        "uid" : "b94b7cb971641d20",
+        "name" : "requestData",
+        "source" : "b94b7cb971641d20.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "5abe32545b389bc0",
+        "name" : "responseData",
+        "source" : "5abe32545b389bc0.html",
+        "type" : "text/html",
+        "size" : 15
+      }, {
+        "uid" : "f6202d668e0ebbfb",
+        "name" : "url",
+        "source" : "f6202d668e0ebbfb.html",
+        "type" : "text/html",
+        "size" : 70
+      }, {
+        "uid" : "6f77ef422d23e096",
+        "name" : "method",
+        "source" : "6f77ef422d23e096.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "aee18a8a55e137f8",
+        "name" : "headers",
+        "source" : "aee18a8a55e137f8.html",
+        "type" : "text/html",
+        "size" : 303
+      }, {
+        "uid" : "88ac68c2875bcf46",
+        "name" : "params",
+        "source" : "88ac68c2875bcf46.html",
+        "type" : "text/html",
+        "size" : 77
+      }, {
+        "uid" : "8f11a0a20f35fd39",
+        "name" : "requestData",
+        "source" : "8f11a0a20f35fd39.html",
+        "type" : "text/html",
+        "size" : 25
+      }, {
+        "uid" : "6df72fd024051804",
+        "name" : "responseData",
+        "source" : "6df72fd024051804.html",
+        "type" : "text/html",
+        "size" : 15
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 36,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 97,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool::0",
+    "time" : {
+      "start" : 1663248544190,
+      "stop" : 1663248544190,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "hashRate"
+  }, {
+    "name" : "epic",
+    "value" : "EhashPool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "subSuite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "host",
+    "value" : "fengxiaohuideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "26646-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_ehashpool"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b80c9da62abe3411.json",
+  "parameterValues" : [ ]
+}
