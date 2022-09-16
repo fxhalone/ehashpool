@@ -1,0 +1,130 @@
+{
+  "uid" : "482f4be580c657cc",
+  "name" : "test_home",
+  "fullName" : "testcase.test_ehashpool.test_ehashpool#test_home",
+  "historyId" : "db825ba62b1e09e5292c0990fccbb807",
+  "time" : {
+    "start" : 1663322799037,
+    "stop" : 1663322799205,
+    "duration" : 168
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool",
+    "time" : {
+      "start" : 1663322799036,
+      "stop" : 1663322799036,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c321f20214023fcb",
+      "name" : "url",
+      "source" : "c321f20214023fcb.html",
+      "type" : "text/html",
+      "size" : 58
+    }, {
+      "uid" : "91f3a309d3e5ec49",
+      "name" : "method",
+      "source" : "91f3a309d3e5ec49.html",
+      "type" : "text/html",
+      "size" : 12
+    }, {
+      "uid" : "d65f8c7abad86074",
+      "name" : "headers",
+      "source" : "d65f8c7abad86074.html",
+      "type" : "text/html",
+      "size" : 75
+    }, {
+      "uid" : "bed7ad398ad5d8f3",
+      "name" : "responseData",
+      "source" : "bed7ad398ad5d8f3.html",
+      "type" : "text/html",
+      "size" : 721
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool::0",
+    "time" : {
+      "start" : 1663322799205,
+      "stop" : 1663322799205,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "home"
+  }, {
+    "name" : "epic",
+    "value" : "EhashPool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "subSuite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "host",
+    "value" : "fengxiaohuideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "34396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_ehashpool"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "482f4be580c657cc.json",
+  "parameterValues" : [ ]
+}

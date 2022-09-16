@@ -1,5 +1,30 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "EhashPool",
+    "children" : [ {
+      "name" : "home",
+      "children" : [ {
+        "name" : "test_home",
+        "uid" : "482f4be580c657cc",
+        "parentUid" : "3c48d8f1d40493923f4b07868ef44d25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663322799037,
+          "stop" : 1663322799205,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3c48d8f1d40493923f4b07868ef44d25"
+    } ],
+    "uid" : "91d51f4729b9d5764d1edda6cb005ca5"
+  } ],
   "name" : "behaviors"
 }

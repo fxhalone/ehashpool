@@ -1,1 +1,11 @@
-[ ]
+[ {
+  "uid" : "482f4be580c657cc",
+  "name" : "test_home",
+  "time" : {
+    "start" : 1663322799037,
+    "stop" : 1663322799205,
+    "duration" : 168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
