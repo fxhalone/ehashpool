@@ -1,3 +1,5 @@
+import sys
+sys.path.append('..')
 from  auto.util.MailUtil import *
 
 def pytest_terminal_summary(terminalreporter, exitstatus, config):

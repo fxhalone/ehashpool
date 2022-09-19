@@ -1,8 +1,6 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
-import sys
-sys.path.append('..')
 from auto.util.config import *
 
 class MailUtil:
@@ -23,5 +21,4 @@ class MailUtil:
 
 
 if __name__ == '__main__':
-    a  = MailUtil()
-    a.sendMail()
+    pass
