@@ -1,6 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
+import sys
+sys.path.append('..')
 from auto.util.config import *
 
 class MailUtil:
