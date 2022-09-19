@@ -1,0 +1,26 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "testcase.test_ehashpool",
+    "children" : [ {
+      "name" : "test_minerSetting",
+      "uid" : "d00e853ff4825dd",
+      "parentUid" : "ad3a4ab1a7e9556c25ceabc9dd6ee3ee",
+      "status" : "failed",
+      "time" : {
+        "start" : 1663561298668,
+        "stop" : 1663561298951,
+        "duration" : 283
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testcase.test_ehashpool"
+  } ],
+  "name" : "packages"
+}

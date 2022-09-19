@@ -1,0 +1,11 @@
+[ {
+  "uid" : "d00e853ff4825dd",
+  "name" : "test_minerSetting",
+  "time" : {
+    "start" : 1663561298668,
+    "stop" : 1663561298951,
+    "duration" : 283
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

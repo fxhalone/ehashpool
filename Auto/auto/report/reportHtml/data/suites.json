@@ -1,0 +1,34 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_ehashpool",
+      "children" : [ {
+        "name" : "test_ehashpool",
+        "children" : [ {
+          "name" : "test_minerSetting",
+          "uid" : "d00e853ff4825dd",
+          "parentUid" : "371be87c2c15871ff3a5e5ea41d326d3",
+          "status" : "failed",
+          "time" : {
+            "start" : 1663561298668,
+            "stop" : 1663561298951,
+            "duration" : 283
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "371be87c2c15871ff3a5e5ea41d326d3"
+      } ],
+      "uid" : "dd3a1fba8bd01a93ad651a7d035c07b3"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ],
+  "name" : "suites"
+}

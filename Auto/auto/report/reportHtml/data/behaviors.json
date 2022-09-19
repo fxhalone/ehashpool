@@ -1,0 +1,30 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "EhashPool",
+    "children" : [ {
+      "name" : "minerSetting",
+      "children" : [ {
+        "name" : "test_minerSetting",
+        "uid" : "d00e853ff4825dd",
+        "parentUid" : "b674c2fd30f2998fb6d5f3fa88e40885",
+        "status" : "failed",
+        "time" : {
+          "start" : 1663561298668,
+          "stop" : 1663561298951,
+          "duration" : 283
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b674c2fd30f2998fb6d5f3fa88e40885"
+    } ],
+    "uid" : "91d51f4729b9d5764d1edda6cb005ca5"
+  } ],
+  "name" : "behaviors"
+}
