@@ -1,8 +1,6 @@
-import os
 import sys
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
+import sys
+sys.path.append('..')
 from auto.util.LogUtil import *
 from auto.util.MySqlUtil import *
 from auto.util.RedisUtil import *
