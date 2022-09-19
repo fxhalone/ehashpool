@@ -48,27 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pytest/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-781" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/_pytest/config/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auto/testcase/test_ehashpool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1956">
-              <caret line="1153" column="47" lean-forward="true" selection-start-line="1153" selection-start-column="47" selection-end-line="1153" selection-end-column="47" />
+            <state relative-caret-position="643">
+              <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
               </folding>
@@ -124,6 +108,7 @@
       <find>EnabledMinerNotifySetting</find>
       <find>editMinerNotifySetting</find>
       <find>GET_MINER</find>
+      <find>export</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,6 +169,18 @@
               <item name="Auto" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto" type="462c0819:PsiDirectoryNode" />
               <item name="auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auto" type="462c0819:PsiDirectoryNode" />
+              <item name="auto" type="462c0819:PsiDirectoryNode" />
+              <item name="download" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auto" type="462c0819:PsiDirectoryNode" />
+              <item name="auto" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Auto" type="b2602c69:ProjectViewProjectNode" />
@@ -396,7 +393,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290793" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290793" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39927074" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,24 +498,41 @@
     <entry file="file://$PROJECT_DIR$/auto/util/googleUtil.py" />
     <entry file="file://$PROJECT_DIR$/auto/util/test.py" />
     <entry file="file://$PROJECT_DIR$/auto/util/InterFaceUtil.py" />
-    <entry file="file://$PROJECT_DIR$/auto/util/RedisUtil.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/auto/util/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/auto/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pytest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-781" />
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/_pytest/config/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-132">
           <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pytest/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto/util/MySqlUtil.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto/util/MailUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -529,7 +543,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auto/util/MySqlUtil.py">
+    <entry file="file://$PROJECT_DIR$/auto/util/RedisUtil.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/auto/main.py">
@@ -542,27 +556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auto/util/MailUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auto/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auto/testcase/test_ehashpool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1956">
-          <caret line="1153" column="47" lean-forward="true" selection-start-line="1153" selection-start-column="47" selection-end-line="1153" selection-end-column="47" />
+        <state relative-caret-position="643">
+          <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
           <folding>
             <element signature="e#1#11#0" expanded="true" />
           </folding>
