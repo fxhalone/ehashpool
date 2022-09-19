@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auto/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/auto/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auto/testcase/test_ehashpool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
+            <state relative-caret-position="3870">
+              <caret line="258" column="32" selection-start-line="258" selection-start-column="32" selection-end-line="258" selection-end-column="32" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
               </folding>
@@ -174,13 +174,13 @@
               <item name="Auto" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto" type="462c0819:PsiDirectoryNode" />
               <item name="auto" type="462c0819:PsiDirectoryNode" />
-              <item name="download" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Auto" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto" type="462c0819:PsiDirectoryNode" />
               <item name="auto" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="testcase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Auto" type="b2602c69:ProjectViewProjectNode" />
@@ -223,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MailUtil">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="MailUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,27 +258,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/util/RedisUtil.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="googleUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/util/googleUtil.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,13 +308,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_ehashpool.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/auto/testcase/test_ehashpool.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MailUtil" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python tests.pytest in test_ehashpool.py" />
+        <item itemvalue="Python.MailUtil" />
         <item itemvalue="Python.RedisUtil" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.googleUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -353,12 +347,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_ehashpool_py - 2022.09.07 at 16h 38m 15s.xml">
-      <configuration name="pytest in test_ehashpool.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_ehashpool_py - 2022.09.07 at 16h 39m 45s.xml">
-      <configuration name="pytest in test_ehashpool.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_ehashpool_py - 2022.09.07 at 16h 41m 00s.xml">
       <configuration name="pytest in test_ehashpool.py" configurationId="tests" />
     </history-entry>
@@ -383,6 +371,12 @@
     <history-entry file="pytest_in_test_ehashpool_py - 2022.09.13 at 17h 50m 33s.xml">
       <configuration name="pytest in test_ehashpool.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_ehashpool_py - 2022.09.19 at 19h 24m 10s.xml">
+      <configuration name="pytest in test_ehashpool.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_ehashpool_py - 2022.09.19 at 19h 24m 16s.xml">
+      <configuration name="pytest in test_ehashpool.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2048" height="1189" extended-state="6" />
@@ -393,7 +387,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290793" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290793" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39927074" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -516,13 +510,6 @@
         <state relative-caret-position="-420" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auto/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auto/util/MySqlUtil.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -548,18 +535,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auto/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auto/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auto/testcase/test_ehashpool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
+        <state relative-caret-position="3870">
+          <caret line="258" column="32" selection-start-line="258" selection-start-column="32" selection-end-line="258" selection-end-column="32" />
           <folding>
             <element signature="e#1#11#0" expanded="true" />
           </folding>

@@ -1,4 +1,4 @@
-import sys
+import os
 import sys
 sys.path.append('..')
 from auto.util.LogUtil import *
@@ -28,6 +28,8 @@ class test_ehashpool:
     def setup_class(self):
         print('初始化数据')
         '''清除用户数据'''
+
+
         mysqlUtil.initEhashAccount()
 
     def teardown_class(self):
@@ -254,7 +256,7 @@ class test_ehashpool:
         allure.attach("<h1>" + str(data) + "</h1>", name='requestData', attachment_type=allure.attachment_type.HTML)
         response = requests.get(url=NEW_EHASHPOOL_ADDRESS + EXPORT_HASHRATE, headers=headers, data=dataJson, params=params)
         allure.attach("<h1>" + "文件" + "</h1>", name='responseData',attachment_type=allure.attachment_type.HTML)
-        with open('download/hashRate'+span+headers['Coin-Type']+'.xlsx', 'wb') as fd:
+        with open(os.getcwd()+'/download/hashRate'+span+headers['Coin-Type']+'.xlsx', 'wb') as fd:
             for chunk in response.iter_content():
                 fd.write(chunk)
 
@@ -1418,7 +1420,6 @@ class test_ehashpool:
 
         with allure.step('step11:删除子账号'):
             self.deletedMiner(newHeaders,minerId,uid)#删除子账号
-
 
 
 
