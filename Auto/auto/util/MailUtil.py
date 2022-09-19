@@ -5,11 +5,11 @@ from auto.util.config import *
 
 class MailUtil:
 
-    def sendMail(self):
+    def sendMail(self,content):
 
         sender = GMAIL_USER
         receivers = ['f1035717636@163.com']
-        message  = MIMEText('接口自动化执行完成','plain','utf-8')
+        message  = MIMEText(content,'plain','utf-8')
         message['From'] = Header('自动化客户端','utf-8')
         message['To'] = Header('自动化测试','utf-8')
         message['Subject'] = Header('接口自动化测试执行完毕通知','utf-8')

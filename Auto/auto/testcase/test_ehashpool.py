@@ -28,7 +28,7 @@ class test_ehashpool:
     def setup_class(self):
         print('初始化数据')
         '''清除用户数据'''
-        mysqlUtil.initEhashAccount()
+        # mysqlUtil.initEhashAccount()
 
     def teardown_class(self):
         print("测试结束")
@@ -936,49 +936,49 @@ class test_ehashpool:
 
 
 
-    # '''流程'''
-    # '''首页模块'''
+    '''流程'''
+    '''首页模块'''
+    @allure.epic("EhashPool")
+    @allure.feature("home")
+    def test_home(self):
+        self.home() #获取首页数据
+
+
+
+    # '''注册模块'''
     # @allure.epic("EhashPool")
-    # @allure.feature("home")
-    # def test_home(self):
-    #     self.home() #获取首页数据
+    # @allure.feature("singUp")
+    # def test_singUp(self):
+    #
+    #     with allure.step('step1:sendEmailCode'):
+    #         self.sendEmailCode(EMALIL_CODE_SINGUP) #发送注册验证码
+    #
+    #     with allure.step('step2:checkUserSignIn'):
+    #         self.checkUserSignIn() #检查验证码
+    #
+    #     with allure.step('step3:addETHUser'):
+    #         self.addETHUser() #注册用户
 
-
-
-    '''注册模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("singUp")
-    def test_singUp(self):
-
-        with allure.step('step1:sendEmailCode'):
-            self.sendEmailCode(EMALIL_CODE_SINGUP) #发送注册验证码
-
-        with allure.step('step2:checkUserSignIn'):
-            self.checkUserSignIn() #检查验证码
-
-        with allure.step('step3:addETHUser'):
-            self.addETHUser() #注册用户
-
-
-    '''算力模块'''
-    @allure.epic("EhashPool")
-    @allure.feature("hashRate")
-    def test_hashRate(self):
-        RP_Token = ''
-
-        with allure.step('step1:login'):
-            RP_Token = self.login() #登陆
-
-        '''将RP_Token加入headers'''
-        newHeaders = {
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            'RP-Token':RP_Token
-        }
-        uid = mysqlUtil.getUidWithEmail()
-
-        with allure.step('step2:createMiner'):
-            self.createMiner(newHeaders,uid) #创建子账户
+    #
+    # '''算力模块'''
+    # @allure.epic("EhashPool")
+    # @allure.feature("hashRate")
+    # def test_hashRate(self):
+    #     RP_Token = ''
+    #
+    #     with allure.step('step1:login'):
+    #         RP_Token = self.login() #登陆
+    #
+    #     '''将RP_Token加入headers'''
+    #     newHeaders = {
+    #         'accept': 'application/json',
+    #         'Content-Type': 'application/json',
+    #         'RP-Token':RP_Token
+    #     }
+    #     uid = mysqlUtil.getUidWithEmail()
+    #
+    #     with allure.step('step2:createMiner'):
+    #         self.createMiner(newHeaders,uid) #创建子账户
 
 
 
