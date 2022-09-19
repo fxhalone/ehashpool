@@ -3,16 +3,33 @@
   "children" : [ {
     "name" : "fengxiaohuideMacBook-Pro.local",
     "children" : [ {
-      "name" : "37580-MainThread",
+      "name" : "38257-MainThread",
       "children" : [ {
-        "name" : "test_minerSetting",
-        "uid" : "d00e853ff4825dd",
-        "parentUid" : "92b9d8121dade48d5b37b5a08fdf9d21",
-        "status" : "failed",
+        "name" : "test_hashRate",
+        "uid" : "b6d294dfeda7f747",
+        "parentUid" : "ef81d19b8499054cd07ad88206b71862",
+        "status" : "passed",
         "time" : {
-          "start" : 1663561298668,
-          "stop" : 1663561298951,
-          "duration" : 283
+          "start" : 1663568063875,
+          "stop" : 1663568064588,
+          "duration" : 713
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_singUp",
+        "uid" : "28d94c838a6ac26",
+        "parentUid" : "ef81d19b8499054cd07ad88206b71862",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663568059834,
+          "stop" : 1663568063872,
+          "duration" : 4038
         },
         "flaky" : false,
         "newFailed" : false,
@@ -22,7 +39,7 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "92b9d8121dade48d5b37b5a08fdf9d21"
+      "uid" : "ef81d19b8499054cd07ad88206b71862"
     } ],
     "uid" : "b08a3d170897b264e4c1064650832a9b"
   } ],

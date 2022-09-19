@@ -7,14 +7,31 @@
       "children" : [ {
         "name" : "test_ehashpool",
         "children" : [ {
-          "name" : "test_minerSetting",
-          "uid" : "d00e853ff4825dd",
+          "name" : "test_singUp",
+          "uid" : "28d94c838a6ac26",
           "parentUid" : "371be87c2c15871ff3a5e5ea41d326d3",
-          "status" : "failed",
+          "status" : "passed",
           "time" : {
-            "start" : 1663561298668,
-            "stop" : 1663561298951,
-            "duration" : 283
+            "start" : 1663568059834,
+            "stop" : 1663568063872,
+            "duration" : 4038
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_hashRate",
+          "uid" : "b6d294dfeda7f747",
+          "parentUid" : "371be87c2c15871ff3a5e5ea41d326d3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1663568063875,
+            "stop" : 1663568064588,
+            "duration" : 713
           },
           "flaky" : false,
           "newFailed" : false,

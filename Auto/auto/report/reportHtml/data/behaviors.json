@@ -3,16 +3,16 @@
   "children" : [ {
     "name" : "EhashPool",
     "children" : [ {
-      "name" : "minerSetting",
+      "name" : "singUp",
       "children" : [ {
-        "name" : "test_minerSetting",
-        "uid" : "d00e853ff4825dd",
-        "parentUid" : "b674c2fd30f2998fb6d5f3fa88e40885",
-        "status" : "failed",
+        "name" : "test_singUp",
+        "uid" : "28d94c838a6ac26",
+        "parentUid" : "adb80a7cca5b82282fdc6ad9e3d4fbe4",
+        "status" : "passed",
         "time" : {
-          "start" : 1663561298668,
-          "stop" : 1663561298951,
-          "duration" : 283
+          "start" : 1663568059834,
+          "stop" : 1663568063872,
+          "duration" : 4038
         },
         "flaky" : false,
         "newFailed" : false,
@@ -22,7 +22,28 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b674c2fd30f2998fb6d5f3fa88e40885"
+      "uid" : "adb80a7cca5b82282fdc6ad9e3d4fbe4"
+    }, {
+      "name" : "hashRate",
+      "children" : [ {
+        "name" : "test_hashRate",
+        "uid" : "b6d294dfeda7f747",
+        "parentUid" : "d7c8525c05f50f85bd34b44dcbea0b0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1663568063875,
+          "stop" : 1663568064588,
+          "duration" : 713
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d7c8525c05f50f85bd34b44dcbea0b0d"
     } ],
     "uid" : "91d51f4729b9d5764d1edda6cb005ca5"
   } ],

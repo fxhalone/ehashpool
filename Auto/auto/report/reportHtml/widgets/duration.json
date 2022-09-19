@@ -1,11 +1,21 @@
 [ {
-  "uid" : "d00e853ff4825dd",
-  "name" : "test_minerSetting",
+  "uid" : "28d94c838a6ac26",
+  "name" : "test_singUp",
   "time" : {
-    "start" : 1663561298668,
-    "stop" : 1663561298951,
-    "duration" : 283
+    "start" : 1663568059834,
+    "stop" : 1663568063872,
+    "duration" : 4038
   },
-  "status" : "failed",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6d294dfeda7f747",
+  "name" : "test_hashRate",
+  "time" : {
+    "start" : 1663568063875,
+    "stop" : 1663568064588,
+    "duration" : 713
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

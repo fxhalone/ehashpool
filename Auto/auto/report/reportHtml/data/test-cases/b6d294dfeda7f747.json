@@ -1,0 +1,196 @@
+{
+  "uid" : "b6d294dfeda7f747",
+  "name" : "test_hashRate",
+  "fullName" : "testcase.test_ehashpool.test_ehashpool#test_hashRate",
+  "historyId" : "40ce7ba5585293d9752ace8fb37a50e4",
+  "time" : {
+    "start" : 1663568063875,
+    "stop" : 1663568064588,
+    "duration" : 713
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool",
+    "time" : {
+      "start" : 1663568059560,
+      "stop" : 1663568059833,
+      "duration" : 273
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step1:login",
+      "time" : {
+        "start" : 1663568063875,
+        "stop" : 1663568064007,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "42ba969d53a8daf0",
+        "name" : "url",
+        "source" : "42ba969d53a8daf0.html",
+        "type" : "text/html",
+        "size" : 68
+      }, {
+        "uid" : "65b4472e708954ac",
+        "name" : "method",
+        "source" : "65b4472e708954ac.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "55bfb66341b5a2b9",
+        "name" : "headers",
+        "source" : "55bfb66341b5a2b9.html",
+        "type" : "text/html",
+        "size" : 75
+      }, {
+        "uid" : "cb4ded0404ad746",
+        "name" : "requestData",
+        "source" : "cb4ded0404ad746.html",
+        "type" : "text/html",
+        "size" : 95
+      }, {
+        "uid" : "60a7fcf94a017a94",
+        "name" : "responseData",
+        "source" : "60a7fcf94a017a94.html",
+        "type" : "text/html",
+        "size" : 260
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step2:createMiner",
+      "time" : {
+        "start" : 1663568064222,
+        "stop" : 1663568064588,
+        "duration" : 366
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e0f953a5b97b434e",
+        "name" : "url",
+        "source" : "e0f953a5b97b434e.html",
+        "type" : "text/html",
+        "size" : 81
+      }, {
+        "uid" : "4bfc1ae57ce692fd",
+        "name" : "method",
+        "source" : "4bfc1ae57ce692fd.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "ffb9c6410e3896fa",
+        "name" : "headers",
+        "source" : "ffb9c6410e3896fa.html",
+        "type" : "text/html",
+        "size" : 264
+      }, {
+        "uid" : "b482bd36de368117",
+        "name" : "requestData",
+        "source" : "b482bd36de368117.html",
+        "type" : "text/html",
+        "size" : 53
+      }, {
+        "uid" : "79084f94936f54e",
+        "name" : "responseData",
+        "source" : "79084f94936f54e.html",
+        "type" : "text/html",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool::0",
+    "time" : {
+      "start" : 1663568064589,
+      "stop" : 1663568064589,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "EhashPool"
+  }, {
+    "name" : "feature",
+    "value" : "hashRate"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "subSuite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "host",
+    "value" : "fengxiaohuideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "38257-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_ehashpool"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b6d294dfeda7f747.json",
+  "parameterValues" : [ ]
+}

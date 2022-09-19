@@ -1,0 +1,241 @@
+{
+  "uid" : "28d94c838a6ac26",
+  "name" : "test_singUp",
+  "fullName" : "testcase.test_ehashpool.test_ehashpool#test_singUp",
+  "historyId" : "cdef6cbf002b710a36fc50c9685dc506",
+  "time" : {
+    "start" : 1663568059834,
+    "stop" : 1663568063872,
+    "duration" : 4038
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool",
+    "time" : {
+      "start" : 1663568059560,
+      "stop" : 1663568059833,
+      "duration" : 273
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step1:sendEmailCode",
+      "time" : {
+        "start" : 1663568059834,
+        "stop" : 1663568062848,
+        "duration" : 3014
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4588413d84c42aa0",
+        "name" : "url",
+        "source" : "4588413d84c42aa0.html",
+        "type" : "text/html",
+        "size" : 76
+      }, {
+        "uid" : "4a957f6ae064e718",
+        "name" : "method",
+        "source" : "4a957f6ae064e718.html",
+        "type" : "text/html",
+        "size" : 12
+      }, {
+        "uid" : "633a7e147b765bc5",
+        "name" : "headers",
+        "source" : "633a7e147b765bc5.html",
+        "type" : "text/html",
+        "size" : 75
+      }, {
+        "uid" : "25fb82480f17b21a",
+        "name" : "requestParams",
+        "source" : "25fb82480f17b21a.html",
+        "type" : "text/html",
+        "size" : 54
+      }, {
+        "uid" : "4e6a27f786396c68",
+        "name" : "responseData",
+        "source" : "4e6a27f786396c68.html",
+        "type" : "text/html",
+        "size" : 52
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step2:checkUserSignIn",
+      "time" : {
+        "start" : 1663568062848,
+        "stop" : 1663568063348,
+        "duration" : 500
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3d6bf478434b4303",
+        "name" : "url",
+        "source" : "3d6bf478434b4303.html",
+        "type" : "text/html",
+        "size" : 78
+      }, {
+        "uid" : "acd9d2734911a002",
+        "name" : "method",
+        "source" : "acd9d2734911a002.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "109a3801858df863",
+        "name" : "headers",
+        "source" : "109a3801858df863.html",
+        "type" : "text/html",
+        "size" : 75
+      }, {
+        "uid" : "47e0f004d42ced78",
+        "name" : "requestData",
+        "source" : "47e0f004d42ced78.html",
+        "type" : "text/html",
+        "size" : 93
+      }, {
+        "uid" : "e5ea8d0a2d667227",
+        "name" : "responseData",
+        "source" : "e5ea8d0a2d667227.html",
+        "type" : "text/html",
+        "size" : 64
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "step3:addETHUser",
+      "time" : {
+        "start" : 1663568063348,
+        "stop" : 1663568063872,
+        "duration" : 524
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "194bbc959e675655",
+        "name" : "url",
+        "source" : "194bbc959e675655.html",
+        "type" : "text/html",
+        "size" : 73
+      }, {
+        "uid" : "c362d975bcd50668",
+        "name" : "method",
+        "source" : "c362d975bcd50668.html",
+        "type" : "text/html",
+        "size" : 13
+      }, {
+        "uid" : "bad333f76769ddcc",
+        "name" : "headers",
+        "source" : "bad333f76769ddcc.html",
+        "type" : "text/html",
+        "size" : 75
+      }, {
+        "uid" : "b9ae03a94a2f9c53",
+        "name" : "requestData",
+        "source" : "b9ae03a94a2f9c53.html",
+        "type" : "text/html",
+        "size" : 127
+      }, {
+        "uid" : "6f503ad30818b622",
+        "name" : "responseData",
+        "source" : "6f503ad30818b622.html",
+        "type" : "text/html",
+        "size" : 64
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 15,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_test_ehashpool::0",
+    "time" : {
+      "start" : 1663568064589,
+      "stop" : 1663568064589,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "EhashPool"
+  }, {
+    "name" : "feature",
+    "value" : "singUp"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "subSuite",
+    "value" : "test_ehashpool"
+  }, {
+    "name" : "host",
+    "value" : "fengxiaohuideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "38257-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_ehashpool"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28d94c838a6ac26.json",
+  "parameterValues" : [ ]
+}
